@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+nav{
+    height: 100px;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+}
+nav div{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+nav img{
+    height: 80%;
+}
+.max-1100{
+    max-width: 1100px;
+    margin-inline: auto;
+}
+h1, h2{
+    margin-block: 10px;
+}
+p, li, a, button{
+    margin-block: 5px;
+}
+.ul-n{
+    list-style: none;
+    height: 100%;
+    display: flex;
+    gap: 10px;
+}
+.ul-n .nav-links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-inline: 10px;
+    height: 100%;
+    position: relative;
+    flex-direction: column;
+    transition: all 0.5s;
+}
+.ul-n .nav-links:hover::after{
+    content: "";
+    position: relative;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    animation: blowUp linear 0.1s;
+    background-color: rgb(62,149,244);
+}
+@keyframes blowUp {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 100%;
+    }
+}
+main{
+    padding-block: 20px;
+}
+.margin-block-10{
+    margin-block: 10px;
+}
+.margin-block-5{
+    margin-block: 5px;
+}
+.padding-block-20{
+    padding-block: 20px;
+}
+h1{
+    font-size: 35px;
+}
+h2{
+    font-size: 25px;
+}
+h3{
+    font-size: 20px;
+}
+p, li, a, button{
+    font-size: 17px;
+}
+.hide-this{
+    display: none;
+}
+.hide-for-l{
+    display: none;
+}
+.more{
+    height: 100%;
+}
+.show-more{
+    padding-inline: 20px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.more-menu{
+    flex-direction: column;
+    padding: 20px;
+    min-width: 60vw;
+    gap: 10px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100svh;
+    background-color: rgba(255, 255, 255);
+    animation: fadeIn .5s linear;
+}
+.close-menu{
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255);
+}
+@keyframes fadeIn {
+    0%{
+        right: -1000px;
+    }
+}
+.more-menu li{
+    padding: 10px;
+}
+footer{
+    background-color: rgba(0,0,0,0.1);
+}
+.footer-sec{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.footer-sec img{
+    height: 80px;
+}
+@media only screen and (max-width:1100px){
+    main, footer, .header-section{
+        padding-inline: 10px;
+    }
+}
+@media only screen and (max-width:800px){
+    .hide-for-l{
+        display: block;
+    }
+    .show-l{
+        display: none;
+    }
+    h1{
+        font-size: 30px;
+    }
+    h2{
+        font-size: 20px;
+    }
+    h3{
+        font-size: 15px;
+    }
+    p, li, a, button{
+        font-size: 13px;
+    }
+}
+.info-pic{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+.info-img{
+    height: 200px;
+}
+.seltable2 a{
+    display: block;
+    padding: 10px;
+    background-color: aqua;
+    margin-block: 20px;
+}
